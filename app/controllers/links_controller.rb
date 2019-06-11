@@ -9,8 +9,10 @@ class LinksController < ApplicationController
       if creator.success?
         @internal_link = "#{request.base_url}/#{creator.internal_link}"
 
+        format.js   { }
         format.json { render json: { short_url: "/#{creator.internal_link}", url: creator.url }, status: :ok }
       else
+        format.js   { }
         format.json { render json: creator.errors, status: :unprocessable_entity }
       end
     end

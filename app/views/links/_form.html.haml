@@ -1,0 +1,4 @@
+= form_tag links_path, method: :post, remote: true do
+  .form-group
+    = text_field_tag :url, '', placeholder: 'url', class: 'form-control'
+  = submit_tag 'Add URL', class: 'btn btn-success'
