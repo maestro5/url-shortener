@@ -19,11 +19,18 @@ class LinksController < ApplicationController
   end
 
   def show
+    @link = LinkList.find(internal_link_params[:internal_link])
+
+    redirect_to @link if @link
   end
 
   private
 
   def link_params
     params.permit(:url)
+  end
+
+  def internal_link_params
+    params.permit(:internal_link)
   end
 end
