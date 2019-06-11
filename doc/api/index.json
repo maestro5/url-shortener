@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "name": "Link",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Cerates an internal URL",
+          "link": "link/cerates_an_internal_url.json",
+          "groups": "all",
+          "route": "/links.json",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}
