@@ -1,24 +1,8 @@
-# README
+# URL Shortener
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usage
+Build your image
+`$ docker build -t url_shortener .`
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Build container
+`$ docker run --restart=always -p 4000:4000 -d -it url_shortener`
