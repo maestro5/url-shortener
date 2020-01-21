@@ -4,7 +4,7 @@ class TransactionsController < ApplicationController
   respond_to :json
 
   def create
-    transaction = Transaction.create(transition_params)
+    transaction = TransactionCreator.call(transition_params).transaction
 
     respond_with(transaction, location: nil)
   end
