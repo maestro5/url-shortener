@@ -1,0 +1,10 @@
+%h1.text-center Transactions
+
+.row
+  .col-md-10
+    = render 'transactions'
+  .col-md-2
+    = render 'filters'
+.row
+  .col-md-12
+    = will_paginate transactions, class: 'text-center'

@@ -1,0 +1,10 @@
+%table.table.table-sortable.table-hover
+  %thead
+    %tr
+      %th= sortable 'first_name'
+      %th Last Name
+      %th Email
+      %th= sortable 'amount'
+      %th= sortable 'created_at', 'Created'
+  %tbody
+    = render transactions

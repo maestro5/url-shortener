@@ -1,4 +1,6 @@
 class Transaction < ApplicationRecord
+  include Filterable
+
   belongs_to :sale, class_name: 'Analytics::Sale'
 
   validates :email, :first_name, :last_name, :amount, presence: true

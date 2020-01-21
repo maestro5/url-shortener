@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :sales, only: :index, module: 'analytics'
 
-  resources :transactions, only: :create
+  resources :transactions, only: %i[create index]
 end

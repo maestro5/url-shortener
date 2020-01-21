@@ -1,0 +1,7 @@
+= form_tag transactions_path, method: "get", class: 'form' do
+  .form-group
+    = text_field_tag :email, '', placeholder: "Email", class: 'form-control'
+  .form-group
+    = text_field_tag :last_name, '', placeholder: "Last Name", class: 'form-control'
+  .form-group
+    = submit_tag "Filter", class: 'btn btn-primary btn-block'
