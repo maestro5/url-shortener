@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_16_174758) do
+ActiveRecord::Schema.define(version: 2020_01_21_165331) do
+
+  create_table "sales", force: :cascade do |t|
+    t.integer "total_amount", default: 0, null: false
+    t.integer "total_transactions", default: 0, null: false
+    t.integer "average_amount", default: 0, null: false
+    t.integer "average_period", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["average_amount"], name: "index_sales_on_average_amount"
+    t.index ["average_period"], name: "index_sales_on_average_period"
+    t.index ["total_amount"], name: "index_sales_on_total_amount"
+    t.index ["total_transactions"], name: "index_sales_on_total_transactions"
+  end
 
   create_table "transactions", force: :cascade do |t|
     t.integer "sale_id"
