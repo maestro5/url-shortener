@@ -1,12 +1,12 @@
 %table.table.table-sortable.table-hover
   %thead
     %tr
-      %th First Name
+      %th= sortable 'first_name'
       %th Last Name
       %th Email
-      %th Total Transactions
-      %th Total Amount
-      %th Average Amount
-      %th Average Period (days)
+      %th= sortable 'total_transactions'
+      %th= sortable 'total_amount'
+      %th= sortable 'average_amount'
+      %th= sortable 'average_period', 'Average Period (days)'
   %tbody
     = render sales
