@@ -15,3 +15,17 @@ Visit api docs on
 
 Visit home page
 `http://localhost:3000`
+
+#### Or, build it in your own image
+
+Build your image
+`$ docker build -t sales_dashboard .`
+
+Build container
+`$ docker run --restart=always -p 4000:4000 -d -it sales_dashboard`
+
+Visit api docs on
+`http://localhost:4000/api/docs`
+
+Visit home page
+`http://localhost:4000`
