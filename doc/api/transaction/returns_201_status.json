@@ -1,0 +1,67 @@
+{
+  "resource": "Transaction",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/transactions.json",
+  "description": "Returns 201 status",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "email",
+      "description": "E-mail"
+    },
+    {
+      "required": true,
+      "name": "first_name",
+      "description": "First Name"
+    },
+    {
+      "required": true,
+      "name": "last_name",
+      "description": "Last Name"
+    },
+    {
+      "required": true,
+      "name": "amount",
+      "description": "Amount"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/transactions.json",
+      "request_body": "email=test%40gmail.com&first_name=John&last_name=Snow&amount=1000",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 1,\n  \"sale_id\": 1,\n  \"email\": \"test@gmail.com\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Snow\",\n  \"amount\": 1000,\n  \"created_at\": \"2020-01-21T13:34:24.142Z\",\n  \"updated_at\": \"2020-01-21T13:34:24.142Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c6ba0c7c8c85699333e4cc47e7d15001\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "39fab7f3-92e6-4e47-9e0c-aacf12c21b17",
+        "X-Runtime": "0.025800",
+        "Content-Length": "178"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

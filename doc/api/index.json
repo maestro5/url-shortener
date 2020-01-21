@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "name": "Transaction",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Returns 201 status",
+          "link": "transaction/returns_201_status.json",
+          "groups": "all",
+          "route": "/transactions.json",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}
